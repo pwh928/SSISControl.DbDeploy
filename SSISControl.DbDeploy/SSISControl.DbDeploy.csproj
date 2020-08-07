@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Scripts\SSISControl_A_Tables_01_CreateTable_Process.sql" />
+    <None Remove="Scripts\SSISControl_A_Tables_02_CreateTable_ProcessInstance.sql" />
+    <None Remove="Scripts\SSISControl_A_Tables_03_CreateTable_ProcessPackageControl.sql" />
+    <None Remove="Scripts\SSISControl_A_Tables_04_CreateTable_ProcessPackageLog.sql" />
+    <None Remove="Scripts\SSISControl_A_Tables_05_CreateTable_ProcessPackageLogErrors.sql" />
+    <None Remove="Scripts\SSISControl_E2_ChildStoredProcedures_prc_INSERT_ProcessInstance.sql" />
+    <None Remove="Scripts\SSISControl_E2_ChildStoredProcedures_prc_INSERT_ProcessPackageLog.sql" />
+    <None Remove="Scripts\SSISControl_E2_ChildStoredProcedures_prc_INSERT_ProcessPackageLogErrors.sql" />
+    <None Remove="Scripts\SSISControl_E2_ChildStoredProcedures_prc_SELECT_ProcessPackageControl.sql" />
+    <None Remove="Scripts\SSISControl_E2_ChildStoredProcedures_prc_SELECT_ProcessPackageControl_EnabledPackagesOnly.sql" />
+    <None Remove="Scripts\SSISControl_E2_ChildStoredProcedures_prc_SELECT_ProcessPackageLog.sql" />
+    <None Remove="Scripts\SSISControl_E2_ChildStoredProcedures_prc_UPDATE_ProcessPackageLog.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\SSISControl_A_Tables_01_CreateTable_Process.sql" />
+    <EmbeddedResource Include="Scripts\SSISControl_A_Tables_02_CreateTable_ProcessInstance.sql" />
+    <EmbeddedResource Include="Scripts\SSISControl_A_Tables_03_CreateTable_ProcessPackageControl.sql" />
+    <EmbeddedResource Include="Scripts\SSISControl_A_Tables_04_CreateTable_ProcessPackageLog.sql" />
+    <EmbeddedResource Include="Scripts\SSISControl_A_Tables_05_CreateTable_ProcessPackageLogErrors.sql" />
+    <EmbeddedResource Include="Scripts\SSISControl_E2_ChildStoredProcedures_prc_INSERT_ProcessInstance.sql" />
+    <EmbeddedResource Include="Scripts\SSISControl_E2_ChildStoredProcedures_prc_INSERT_ProcessPackageLog.sql" />
+    <EmbeddedResource Include="Scripts\SSISControl_E2_ChildStoredProcedures_prc_INSERT_ProcessPackageLogErrors.sql" />
+    <EmbeddedResource Include="Scripts\SSISControl_E2_ChildStoredProcedures_prc_SELECT_ProcessPackageControl.sql" />
+    <EmbeddedResource Include="Scripts\SSISControl_E2_ChildStoredProcedures_prc_SELECT_ProcessPackageControl_EnabledPackagesOnly.sql" />
+    <EmbeddedResource Include="Scripts\SSISControl_E2_ChildStoredProcedures_prc_SELECT_ProcessPackageLog.sql" />
+    <EmbeddedResource Include="Scripts\SSISControl_E2_ChildStoredProcedures_prc_UPDATE_ProcessPackageLog.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="dbup-core" Version="4.4.0" />
+    <PackageReference Include="dbup-sqlserver" Version="4.4.0" />
+    <PackageReference Include="Serilog" Version="2.9.0" />
+    <PackageReference Include="Serilog.Settings.AppSettings" Version="2.2.2" />
+    <PackageReference Include="Serilog.Sinks.ColoredConsole" Version="3.0.1" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+  </ItemGroup>
+
+</Project>
